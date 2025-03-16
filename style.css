@@ -1,0 +1,124 @@
+:root {
+    --color-fondo: #1E1E2F;
+    --color-tarjeta: #29293D;
+    --color-texto: #F8F8F2;
+    --color-boton: #FF6B6B;
+    --color-boton-hover: #FF4F4F;
+    --color-borde: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-fondo);
+}
+
+.main-content {
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.header-banner h1 {
+    color: var(--color-texto);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-banner img {
+    width: 150px;  /* Ajusta el ancho según lo necesites */
+    height: auto;  /* Mantiene la proporción */
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--color-borde);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--color-texto);
+    font-size: 16px;
+}
+
+.button-add {
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-add:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.name-list, .result-list {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--color-fondo);
+    border-radius: 8px;
+    text-align: left;
+    color: var(--color-texto);
+    list-style: none;
+}
+
+.name-list li, .result-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.boton-eliminar {
+    background: transparent;
+    border: none;
+    color: #FF6B6B;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-draw {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-texto);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-draw:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.button-draw img {
+    width: 30px;  /* Ajusta el tamaño según lo necesites */
+    height: auto; 
+}
